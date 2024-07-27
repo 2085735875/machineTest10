@@ -1,0 +1,19 @@
+
+<div>
+   
+             
+</div>
+
+<mat-card>
+    <mat-card-title>User Update form</mat-card-title>
+   
+    <mat-form-field  [formGroup]="userForm" appearance="fill">
+        <mat-label>User Name</mat-label>
+        <input matInput formControlName="userName" placeholder="Enter user Name">
+    </mat-form-field>
+    <mat-card-actions>
+        <div>
+            <button type="button" (click)="onUpdateUser()" mat-raised-button color="primary">Update user</button>
+        </div>
+    </mat-card-actions>
+  </mat-card>

@@ -1,0 +1,19 @@
+
+<div class="row">
+    <div class="col-md-4 mb-4">
+    <ul class="list-group" *ngIf="productsInfo; else noProduct">
+        <li class="list-group-item" [routerLink]="['/products',product.pid]" 
+        *ngFor="let product of productsInfo ">
+            {{product.pname}} 
+        </li>
+    </ul>
+
+    <ng-template #noProduct>
+        <p class="alert alert-info">
+            There is no product available.
+        </p>
+    </ng-template>
+    </div>
+</div>
+<!-- <button mat-raised-button color="primary" routerLink="/products">Go to  products</button> -->
+   <!-- [routerLink]="[product.pid]" -->

@@ -1,0 +1,21 @@
+
+
+<mat-card>
+    <mat-card-title><strong>{{this.prodObj.pname}}</strong></mat-card-title>
+    <mat-card-subtitle> 
+    <strong>{{this.prodObj.pstatus}}</strong></mat-card-subtitle>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" 
+        [routerLink]="['/products', this.prodObj.pid,'edit']">Edit product</button>
+      <button class="ml-2" mat-raised-button color="warn" 
+    (click)="onRemoveProduct()">Remove Product</button>
+    </mat-card-actions>
+  </mat-card>
+
+
+
+
+
+
+<a [routerLink]="['/products','101']" class="btn btn-warning ml-2 mt-4">Show info of Nokia 16</a>
+

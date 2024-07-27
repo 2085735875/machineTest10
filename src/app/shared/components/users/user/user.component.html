@@ -1,0 +1,19 @@
+
+
+
+
+<p>
+    This is user <strong>{{this.userObj.userName}}</strong>
+     with id <strong>{{this.userObj.userId}}</strong>
+</p>
+
+<!-- <button mat-raised-button color="primary" 
+[routerLink]="['/users', this.userObj.userId,'edit']">Edit user</button> -->
+
+<button mat-raised-button color="primary" 
+(click)="gotoEditUser()">Edit user</button>
+
+<button class="ml-2" mat-raised-button color="warn" 
+(click)="onRemoveUser()">Remove user</button>
+
+<a [routerLink]="['/users','3']" class="btn btn-warning ml-2">Show info of Jaywant</a>

@@ -1,0 +1,20 @@
+
+<div class="row">
+    <!-- <div class="col-md-12 mb-4 text-right">
+        <button mat-raised-button color="accent" routerLink="/users/addUser">Add User</button>
+    </div> -->
+    <div class="col-md-4 mb-4">
+    <ul class="list-group" *ngIf="usersData; else noUsers">
+        <li class="list-group-item" [routerLink]="['/users',user.userId]" *ngFor="let user of usersData " >
+            {{user.userName}}
+        </li>
+    </ul>
+
+    <ng-template #noUsers>
+        <p class="alert alert-info">
+            There is no user added yet.
+        </p>
+    </ng-template>
+    </div>
+</div>
+<button mat-raised-button color="primary" routerLink="/products">Go to  products</button>
