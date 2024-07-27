@@ -15,6 +15,7 @@ import { EditUserComponent } from './shared/components/users/edit-user/edit-user
 import { ProductComponent } from './shared/components/products/product/product.component';
 import { EditProductComponent } from './shared/components/products/edit-product/edit-product.component';
 import { PageNotFoundComponent } from './shared/components/page-not-found/page-not-found.component';
+import { NavBarDirective } from './shared/directives/nav-bar.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PageNotFoundComponent } from './shared/components/page-not-found/page-n
     EditUserComponent,
     ProductComponent,
     EditProductComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    NavBarDirective
   ],
   imports: [
     BrowserModule,
